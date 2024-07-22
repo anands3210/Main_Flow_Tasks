@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About - Save the Nature</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Save the Nature</div>
+        <span class="sideMenuButton" onclick="toggleNavbar()">
+            &#9776
+        </span>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Our mission is to protect and preserve the natural beauty of our planet for future generations. We believe that every small action counts, and together we can make a big difference.</p>
+        <section>
+            <h2>Our Team</h2>
+            <ul>
+                <li>
+                    <img src="dp.jpg" alt="Anand Srivastava">
+                    <h3>Anand Srivastava</h3>
+                    <p>Founder and CEO</p>
+                </li>
+                <li>
+                    <img src="dp.jpg" alt="Anand Srivastava">
+                    <h3>Anand Srivastva</h3>
+                    <p>Environmental Specialist</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        function toggleNavbar() {
+            document.querySelector('.navbar').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

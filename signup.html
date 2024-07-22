@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up - Save the Nature</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Save the Nature</div>
+        <span class="sideMenuButton" onclick="toggleNavbar()">
+            &#9776
+        </span>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#" class="active">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <script>
+        function toggleNavbar() {
+            document.querySelector('.navbar').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
